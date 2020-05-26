@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="mySearchingApp">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div>
+      <h1>Search some Eatables!</h1>
+    </div>
+
+    <div ng-controller="SearchMyAppController as search">
+      <div id="inputArea">
+        <div class="ele">
+          <input type="text" placeholder="Enter something..." ng-model="search.value">
+        </div>
+        <div class="ele">
+          <button type="button" class="main" ng-click="search.buttonIsClicked(search.value)">Narrow it down for me</button>
+        </div>
+      </div>
+      <hr>
+
+        <div ng-if="search.display" id="display">
+          Nothing found!
+        </div>
+
+      <ul>
+        <li ng-repeat="category in search.list">
+          <div class="block">
+            <div class="items listedItems">
+              Item Name: <span>{{category.name}}</span> <br>
+              Item Short-Name:  <span>{{category.short_name}}</span><br>
+              Item Description:  <span>{{category.description}}</span>.
+            </div>
+            <div class="listedItems">
+              <button ng-click="search.removeItem($index);" class="btn main">Don't want this one!</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </body>
+</html>

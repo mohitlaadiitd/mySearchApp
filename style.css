@@ -1,0 +1,93 @@
+*{
+  text-align: center;
+  margin:40px;
+  background-color: #f0d0a3;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-size: 40px;
+}
+
+input{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:20px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+}
+
+.main{
+  background-color: #c2000d;
+  border:none;
+  padding:20px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
+.main:hover{
+  background-color: #800004;
+  cursor: pointer;
+}
+
+#display{
+    font-size: 26px;
+    color: #c2000d;
+    font-weight: bold;
+}
+
+ul{
+  list-style: none;
+}
+
+.items{
+  text-align: left;
+  width: 500px;
+  display:inline-block;
+  background-color: #f2c483;
+}
+
+span{
+  font-weight: bold;
+  background-color: #f2c483;
+}
+.btn{
+  float:right;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #c2000d;
+  color:white;
+  font-size: 20px;
+}
+
+.block{
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #f2c483;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ele{
+  display:inline;
+  margin: -17px 15px;
+}
+
+#inputArea{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.listedItems{
+  display: inline;
+  background-color: #f2c483;
+  margin: 19px 15px;
+}
