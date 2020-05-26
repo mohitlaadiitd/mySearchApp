@@ -73,7 +73,7 @@ function SearchMyAppService($http) {
     var searchedItems = [];
     var i;
     for (i=0; i<service.items.length; i++ ) {
-      if (service.items[i].description.indexOf(string)!==-1) {
+      if (service.items[i].description.indexOf(string.toLowerCase())!==-1) {
         searchedItems.push(service.items[i]);
       }
     }
